@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Papel de Parede</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Fundo preto */
+            color: white; /* Texto branco */
+        }
+
+        header {
+            background-color: black; /* Cabeçalho preto */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Para posicionar a logo */
+        }
+
+        /* Logo no cabeçalho */
+        header .logo-header img {
+            max-width: 150px; /* Ajuste o tamanho da logo */
+            height: auto;
+            position: absolute;
+            left: 20px; /* Distância da borda esquerda */
+            top: 20px; /* Distância do topo */
+        }
+
+        /* Texto abaixo da logo */
+        header .description {
+            font-size: 18px;
+            color: white;
+            margin-top: 80px; /* Ajusta o espaço entre a logo e o texto */
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product {
+            width: 300px;
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #222; /* Fundo escuro nos produtos */
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: white; /* Texto do título em branco */
+        }
+
+        .product-price {
+            color: #4CAF50; /* Verde para o preço */
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .buy-button {
+            background-color: #25D366; /* Cor do botão do WhatsApp */
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .buy-button:hover {
+            background-color: #128C7E;
+        }
+
+        footer {
+            background-color: black; /* Rodapé preto */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Logo no rodapé superior */
+        footer .logo-footer img {
+            max-width: 150px; /* Ajuste o tamanho da logo */
+            height: auto;
+            margin-bottom: 10px; /* Espaço entre a logo e o texto do rodapé */
+        }
+
+        footer p {
+            color: white; /* Texto do rodapé em branco */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo no Cabeçalho -->
+        <div class="logo-header">
+            <img src="logo ml papel de parede.png" alt="Logo da Loja">
+        </div>
+        <!-- Texto abaixo da Logo -->
+        <div class="description">
+            Escolha o seu papel de parede exclusivo agora mesmo.
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <!-- Produto 1 -->
+            <div class="product">
+                <img src="img1.png" alt="Papel de Parede 1">
+                <div class="product-title">Papel de Parede Floral</div>
+                <div class="product-price">R$ 89,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede Floral', 'https://example.com/images/img1.png')">Comprar</a>
+            </div>
+            <!-- Produto 2 -->
+            <div class="product">
+                <img src="img2.png" alt="Papel de Parede 2">
+                <div class="product-title">Papel de Parede Geométrico</div>
+                <div class="product-price">R$ 99,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede Geométrico', 'https://example.com/images/img2.png')">Comprar</a>
+            </div>
+            <!-- Produto 3 -->
+            <div class="product">
+                <img src="img3.png" alt="Papel de Parede 3">
+                <div class="product-title">Papel de Parede Listrado</div>
+                <div class="product-price">R$ 79,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede Listrado', 'https://example.com/images/img3.png')">Comprar</a>
+            </div>
+            <!-- Produto 4 -->
+            <div class="product">
+                <img src="img4.png" alt="Papel de Parede 4">
+                <div class="product-title">Papel de Parede Abstrato</div>
+                <div class="product-price">R$ 119,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede Abstrato', 'https://example.com/images/img4.png')">Comprar</a>
+            </div>
+            <!-- Produto 5 -->
+            <div class="product">
+                <img src="img5.png" alt="Papel de Parede 5">
+                <div class="product-title">Papel de Parede Infantil</div>
+                <div class="product-price">R$ 69,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede Infantil', 'https://example.com/images/img5.png')">Comprar</a>
+            </div>
+            <!-- Produto 6 -->
+            <div class="product">
+                <img src="img6.png" alt="Papel de Parede 6">
+                <div class="product-title">Papel de Parede Texturizado</div>
+                <div class="product-price">R$ 129,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede Texturizado', 'https://example.com/images/img6.png')">Comprar</a>
+            </div>
+            <!-- Produto 7 -->
+            <div class="product">
+                <img src="img7.png" alt="Papel de Parede 7">
+                <div class="product-title">Papel de Parede 3D</div>
+                <div class="product-price">R$ 149,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede 3D', 'https://example.com/images/img7.png')">Comprar</a>
+            </div>
+            <!-- Produto 8 -->
+            <div class="product">
+                <img src="img8.png" alt="Papel de Parede 8">
+                <div class="product-title">Papel de Parede Rústico</div>
+                <div class="product-price">R$ 109,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede Rústico', 'https://example.com/images/img8.png')">Comprar</a>
+            </div>
+            <!-- Produto 9 -->
+            <div class="product">
+                <img src="img9.png" alt="Papel de Parede 9">
+                <div class="product-title">Papel de Parede Moderno</div>
+                <div class="product-price">R$ 139,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede Moderno', 'https://example.com/images/img9.png')">Comprar</a>
+            </div>
+            <!-- Produto 10 -->
+            <div class="product">
+                <img src="img10.png" alt="Papel de Parede 10">
+                <div class="product-title">Papel de Parede Vintage</div>
+                <div class="product-price">R$ 119,90</div>
+                <a href="javascript:void(0)" class="buy-button" onclick="redirectToWhatsApp('Papel de Parede Vintage', 'https://example.com/images/img10.png')">Comprar</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Logo no Rodapé Superior -->
+        <div class="logo-footer">
+            <img src="logo ml papel de parede.png" alt="Logo da Loja">
+        </div>
+        
+        <!-- Texto do Rodapé -->
+        <p>Loja de Papel de Parede &copy; 2024</p>
+    </footer>
+
+    <script>
+        function redirectToWhatsApp(productName, productImageURL) {
+            const phoneNumber = "5511987654321"; // Substitua pelo seu número
+            const message = `Olá!%20Gostaria%20de%20comprar%20o%20${encodeURIComponent(productName)}.%20Aqui%20está%20a%20imagem:%20${encodeURIComponent(productImageURL)}`;
+            window.open(`https://wa.me/${559591258738}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
